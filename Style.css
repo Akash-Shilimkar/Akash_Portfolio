@@ -1,268 +1,206 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: Times New Roman;
-	font-size: 20px;
-    
-}
-.navigation-bar{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-    height: 10%;
-	background-color: whitesmoke; 
-	z-index: 10;
-    
-}
-.mymenus{
-	font-weight: bolder;
-	color: black;
-}
-.mymenus:hover{
-	text-decoration: underline 2px solid black;
-	color: rgb(144, 143, 243);
-}
-.allsection{
-	position: relative;
-	top: 80px;
-	width: 100%;
-    height: 100%;
-    
-}
-.section{
-	width: 100%;
-	height: 100vh;
-	/* border: 3px solid black; */
-}
-.section h1{
-	text-align: center;
-}
-.logo{
-  
-    color: #000;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-}
-html{
-	scroll-behavior: smooth;
-    ;
-} 
-/*Home Section css*/
-.home-section{
-    border: 1px solid white ;
-    width: 100%;
-    height: 50%;
-    background: url(https://img.freepik.com/free-photo/flat-lay-work-space-with-notebook-keyboard_23-2148397830.jpg);
-    background-size: 100%;
-}
-.myinfo{
-    height: 450px;
-    width: 50%;
-    margin: 10% 4%;
-}
-.info-home{
-    color: darkcyan;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.myname{
-    font-size: 50px;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-}
-.myname ins{
-    font-size: 50px;
-    color: darkcyan;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-}
-.fsjd{
-    font-family:'Times New Roman', Times, serif ;
-    font-size: 30px;
-    color: rgb(217, 45, 185);
-   
-}
-.rsm{
-    height: 50px;
-    width: 80px;
-    margin: 20px 30px;
-    border: none;
-    background-color: royalblue;
-    color: white;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.rsm:hover{
-    background-color: white;
-    color: royalblue;
-    border: 3px solid royalblue;
-    transform: scale(1.1);
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Times New Roman;
 }
 
-/*About Section CSS*/
-.logo1{
-    color: darkcyan;
-    margin-top: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
-    margin-right: 250px;
-
+body {
+    color: #ededed;
+    background: #081b29;
 }
-.about-section{
-    border: 1px solid white ;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    padding: 20px 10%;
+    background: #051129;
     display: flex;
-    padding: 50px;
-    background-image: url(https://img.freepik.com/free-photo/flat-lay-photo-office-desk-with-laptop-copy-space-background_1150-45598.jpg?w=826&t=st=1707230788~exp=1707231388~hmac=e632db072c1aa9f1f36165344a9fed4826b0444d27cbf0cea888263c431bb9cd);
-    background-size: 100%;
-    /* border: 3px solid black; */
-}
-.aboutsect{
-    height: 500px;
-    
-}
-.myimg{
-    width: 50%;
-    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-.carrer{
-    text-align: justify;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    margin-left: 290px;
-}
-
-.skill{
-    background-color: whitesmoke;
-    margin: 80px;
-    height: 490px;
-    padding: 10px;
-}
-
-.skill-section{
-    height: 610px;
-    border: 1px solid white ;
-    padding: 10px;
-    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: 100%;
-}
-
-.skill-head{
+.logo {
+    position: relative;
     font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #000;
-    font-variant: small-caps;
-    text-decoration: underline 2px solid orangered;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
-.skillset{
-    font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transform: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
 }
 
-.rows td div{
-    height: 190px;
-    border-radius: 20px;
+.navbar a:hover {
+    color: #0ef;
 }
 
-.rows td div:hover{
-    box-shadow: 0px 0px 10px red;
-}
-
-.project-section{
-    padding: 20px;
-    border: none;
-    background-image: url(https://img.freepik.com/free-photo/flat-lay-photo-office-desk-with-laptop-copy-space-background_1150-45598.jpg?w=826&t=st=1707230788~exp=1707231388~hmac=e632db072c1aa9f1f36165344a9fed4826b0444d27cbf0cea888263c431bb9cd);
-    background-size: 100%;
-}
-
-.all-project{
-    margin-top: 40px;
-}
-
-.card-title{
-    color: orangered;
-    font-weight: bolder;
-}
-
-.card-img-top{
-    height: 200px;
-    width: 200px;
-}
-
-.project-section{
-    height: 600px;
-
-}
-
-.contact-section{
-    height: 500px;
+.home {
+    position: relative;
     width: 100%;
-    border: none;
-    background-color: rgb(51, 49, 49);
-    padding: 30px;
+    justify-content: space-between;
+    height: 120vh;
+    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
 }
 
-.cnt-tbl{
-    margin-top: 30px;
+.home-content {
+    max-width: 600px;
 }
 
-.contact1 h1{
-    color: #fff;
-    font-size: 26px;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
 
 }
 
-.contact1 h2{
-    color: #fff;
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p {
     font-size: 20px;
-    margin-left: 150px;
-
 }
 
-.contact-form h1{
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
+}
+
+
+
+/*About Me CSS*/
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
     color: #fff;
-    font-size: 26px;
-    text-align: left;
-    margin-left: 0px;
-    margin-right: 150px;
+    line-height: 1.7;
+    margin: 15px 0 30px;
 }
-.contact1 a .insta{
-    margin-left: 150px;
-}
-
-.contact1 a img{
-	width: 50px;
-	height: 50px;
-}
-.contact1  .git{
-	width: 60px;
-	height: 60px;
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
 }
 
-.form-group input{
-    width: 30Vw;
-    height: 30px;
-    margin-top: 10px;
-    font-size: 15px;
-   
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
 }
-.form-message textarea{
-    width: 30Vw;
-    height: 100px;
-    margin-top: 10px;
-    font-size: 15px;
+.sub-title span{
+    color: #0ef;
 }
 
 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
