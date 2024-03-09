@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="Style.css">
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
@@ -44,55 +45,112 @@
 		</div>
 	</section>
 
-	<h1 class="sub-title">My <span>Skills</span></h1>
+	<h1 class="sub-title">My <span>Skills</span></h1> 
 	<section>
-		<div class="container1" id="skills">
-			<h1 class="heading1">Technical Skills</h1>
-			<div class="Technical-bar">
-				<div class="bar">
-					<div class="info">
-						<span>Programming Languages : Java, Python, SQL </span>
+			<div class="all-section">
+				<div style="background: transparent" class="skill-section" id="skill" align="center">
+				  <div class="skill">
+					<table class="tbl" width="90%" height="400px">
+					  <tr class="rows">
+						<td align="center" valign="top" width="50%" height="200px">
+						  <div>
+							<h3 class="skill-head">Technical Skills</h3>
+							<p>Programming Languages : Java, SQL, Python</p>
+							<p>Frameworks : Collection, Spring, JSP, Servelet, Bootstrap, JDBC</p>
+							<p>Programming Languages : Java, SQL, Python</p>
+							<p>Programming Languages : Java, SQL, Python</p>
+						  </div>
+						</td>
+						<td align="center" valign="top">
+						  <div>
+							<h3 class="skill-head">Professional Skill</h3>
+							<p>Good Communication</p>
+							<p>Analytical Thinker</p>
+							<p>Dedline-Oriented</p>
+							<p>Team Work</p>
+
+						  </div>
+						</td>
+					  </tr>
+					</table>
+				  </div>
+				</div>
+	</section>
+
+	<section>
+		<div class="portfolio" id="project">
+			<div class="main-text" id="project">
+				<h2>Latest<span>Project</span></h2>
+				<div class="project-content">
+					<div class="row">
+						<img src="1.png" >
+						<div class="layer">
+						<h5>Agrico</h5>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<a href="#"><i class='bx bx-link-external' style="color: aliceblue;" ></i></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<img src="1.png">
+						<div class="layer">
+						<h5>Agrico</h5>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<a href="#"><i class='bx bx-link-external' style="color: aliceblue;" ></i></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<img src="1.png">
+						<div class="layer">
+						<h5>Agrico</h5>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<a href="#"><i class='bx bx-link-external' style="color: aliceblue;" ></i></a>
+						</div>
 					</div>
 				</div>
-				<div class="bar">
-					<div class="info">
-						<span>Scripting Languages : HTML, CSS, JavaScript </span>
-					</div>
-				</div>
-				<div class="bar">
-					<div class="info">
-						<span>FrameWorks :BootStrap, Collection, JDBC </span>
-					</div>
-				</div>
-				<div class="bar">
-					<div class="info">
-						<span>Database : MYSQL, RDBMS</span>
-					</div>
-				</div>
-				<div class="bar">
-					<div class="info">
-						<span>Operating Systems : Windows, Linux, Android</span>
-					</div>
-				</div>
+			</div>
+		</div>
+	</section> 
+
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact <span>Me</span></h2>
+			<h4>Address</h4>
+			<p>Sr.no.668/6B,Rohideshwar Society,Pune – 411037</p>
+			<div class="contact-list">
+				<li type="none"><i class="bx bxs-send"></i>akashshilimkar904@gmail.com</li>
+				<li type="none"><i class="bx bxs-phone"></i>9373267054</li>
+			</div>
+			<div class="contact-icon">
+				<a href="#"><i class="bx bxl-linkedin"></i></a>
+				<a href="#"><i class='bx bxl-github'></i></i></a>
 			</div>
 		</div>
 
-		<div class="container1">
-			<h1 class="heading1">Professional Skills</h1>
-			<div class="radial-bar">
-				<div class="text">Good Communication</div>
-			</div>
-			<div class="radial-bar">
-				<div class="text">Analytical Thinker</div>
-			</div>
-			<div class="radial-bar">
-				<div class="text">DeadLine Oriented</div>
-			</div>
-			<div class="radial-bar">
-				<div class="text">Quick Learner</div>
-			</div>
+		<div class="contact-form">
+			<form action="">
+				<input type="text" placeholder="Enter Your Name" required>
+				<input type="email" placeholder="Enter Your Email" required>
+
+				<input type="" placeholder="Enter Your Subject">
+				<textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+				<input type="submit" value="submit" class="send">
+			
+			</form>
 		</div>
 	</section>
+
+
 
 
 	<script src="Script.js"></script>
