@@ -398,8 +398,9 @@ img {
     }
 
     .home {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: auto;
         padding-top: 120px;
         gap: 30px;
